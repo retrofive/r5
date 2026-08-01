@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMI ★ Shibuya Gal Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sparkle-layer" id="sparkleLayer"></div>
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">AMI<span class="star">★</span></div>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#looks">Looks</a></li>
+      <li><a href="#faves">Faves</a></li>
+      <li><a href="#tribe">Gal Tribe</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Shibuya 109 ・ Gal Diary</p>
+    <h1 class="hero-title">AMI <span class="heart">♡</span></h1>
+    <p class="hero-tagline">Bleached tips, tanned skin, zero chill. <br>Living loud in a Tokyo built for neon nights.</p>
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-primary">Meet Me</a>
+      <a href="#looks" class="btn btn-outline">See My Fits</a>
+    </div>
+  </div>
+
+  <div class="hero-avatar">
+    <svg viewBox="0 0 300 340" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#ffd6ec"/>
+          <stop offset="100%" stop-color="#ff2fa1" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#e8a06b"/>
+          <stop offset="100%" stop-color="#c97a45"/>
+        </linearGradient>
+        <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fff2a8"/>
+          <stop offset="100%" stop-color="#ffb6d9"/>
+        </linearGradient>
+      </defs>
+      <circle cx="150" cy="150" r="150" fill="url(#glow)"/>
+      <!-- hair back -->
+      <path d="M60 150 Q40 260 90 320 L210 320 Q260 260 240 150 Q240 60 150 55 Q60 60 60 150 Z" fill="url(#hair)"/>
+      <!-- face -->
+      <ellipse cx="150" cy="165" rx="78" ry="88" fill="url(#skin)"/>
+      <!-- blush -->
+      <ellipse cx="108" cy="185" rx="16" ry="9" fill="#ff8fc1" opacity="0.55"/>
+      <ellipse cx="192" cy="185" rx="16" ry="9" fill="#ff8fc1" opacity="0.55"/>
+      <!-- eyes (big gyaru lashes) -->
+      <path d="M100 165 Q118 150 140 165" stroke="#3a1f10" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M160 165 Q182 150 200 165" stroke="#3a1f10" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="120" cy="172" rx="9" ry="12" fill="#3a1f10"/>
+      <ellipse cx="180" cy="172" rx="9" ry="12" fill="#3a1f10"/>
+      <circle cx="123" cy="167" r="3" fill="#fff"/>
+      <circle cx="183" cy="167" r="3" fill="#fff"/>
+      <!-- lips (glossy) -->
+      <path d="M132 210 Q150 224 168 210 Q150 218 132 210 Z" fill="#e8497a"/>
+      <!-- hair front / fringe -->
+      <path d="M65 140 Q90 90 150 88 Q210 90 235 140 Q210 110 150 112 Q90 110 65 140 Z" fill="url(#hair)"/>
+      <!-- side pieces -->
+      <path d="M62 150 Q50 220 78 300 Q60 220 70 150 Z" fill="url(#hair)"/>
+      <path d="M238 150 Q250 220 222 300 Q240 220 230 150 Z" fill="url(#hair)"/>
+      <!-- choker -->
+      <rect x="118" y="238" width="64" height="10" rx="5" fill="#1a1a1a"/>
+      <circle cx="150" cy="243" r="5" fill="#ff2fa1"/>
+    </svg>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="about">
+    <div class="section-heading">
+      <span class="tag">01 — Profile</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <p class="bio">
+        Hey, I'm Ami — Shibuya born, dance-floor raised. I live for glitter eyeliner,
+        platform boots that add four inches of attitude, and karaoke nights that go
+        way past last train. My whole vibe is confidence turned up to eleven: bold
+        brows, tanned skin, and a wardrobe that argues with the weather forecast.
+        If it sparkles, I'm wearing it. If it's boring, I'm skipping it.
+      </p>
+      <div class="stat-cards">
+        <div class="stat-card"><span class="stat-label">Hometown</span><span class="stat-value">Shibuya, Tokyo</span></div>
+        <div class="stat-card"><span class="stat-label">Style</span><span class="stat-value">Hime Gal ✕ Kogal</span></div>
+        <div class="stat-card"><span class="stat-label">Signature</span><span class="stat-value">Glitter tips & tan lines</span></div>
+        <div class="stat-card"><span class="stat-label">Motto</span><span class="stat-value">"Kawaii is a lifestyle"</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="looks" class="looks">
+    <div class="section-heading">
+      <span class="tag">02 — Style Diary</span>
+      <h2>My Fits This Season</h2>
+    </div>
+    <div class="looks-grid">
+      <article class="look-card look-1">
+        <div class="look-swatch"></div>
+        <h3>Club Night Sparkle</h3>
+        <p>Sequin mini, thigh-highs, glitter body chain, and lashes for days.</p>
+        <div class="look-tags"><span>#nightout</span><span>#glitter</span></div>
+      </article>
+      <article class="look-card look-2">
+        <div class="look-swatch"></div>
+        <h3>Shibuya Street Sweet</h3>
+        <p>Plaid mini skirt, chunky platforms, oversized bow, tan and proud.</p>
+        <div class="look-tags"><span>#streetstyle</span><span>#kogal</span></div>
+      </article>
+      <article class="look-card look-3">
+        <div class="look-swatch"></div>
+        <h3>Princess Hime Pink</h3>
+        <p>Ruffled dress, curled twin-tails, rhinestone tiara, extra sass.</p>
+        <div class="look-tags"><span>#himegal</span><span>#pinkeverything</span></div>
+      </article>
+      <article class="look-card look-4">
+        <div class="look-swatch"></div>
+        <h3>Beach Blonde Tan</h3>
+        <p>Barely-there sundress, gold hoops, golden tan, salt-water hair.</p>
+        <div class="look-tags"><span>#summer</span><span>#tanlines</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="faves" class="faves">
+    <div class="section-heading">
+      <span class="tag">03 — Favorites</span>
+      <h2>Things I'm Obsessed With</h2>
+    </div>
+    <ul class="faves-list">
+      <li><span class="fave-icon">💄</span> Glossy lip tint in the shade "Neon Cherry"</li>
+      <li><span class="fave-icon">👛</span> Rhinestone phone charms — the more the better</li>
+      <li><span class="fave-icon">🎤</span> Karaoke until 4am, every single time</li>
+      <li><span class="fave-icon">🩴</span> Platform sandals stacked dangerously high</li>
+      <li><span class="fave-icon">🥂</span> Purikura photo booths with my girls</li>
+      <li><span class="fave-icon">🐆</span> Leopard print, in literally any context</li>
+    </ul>
+  </section>
+
+  <section id="tribe" class="tribe">
+    <div class="section-heading">
+      <span class="tag">04 — Gal Tribe</span>
+      <h2>Gyaru Substyles I Love</h2>
+    </div>
+    <div class="tribe-grid">
+      <div class="tribe-card"><h3>Kogal</h3><p>School-uniform remix, loose socks, effortless cool.</p></div>
+      <div class="tribe-card"><h3>Hime Gal</h3><p>Princess energy: pastels, curls, tiaras, ruffles.</p></div>
+      <div class="tribe-card"><h3>Manba</h3><p>Deep tan, neon face paint, maximalist and fearless.</p></div>
+      <div class="tribe-card"><h3>Agejo</h3><p>Glamorous nightlife glam — big hair, bold heels.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>AMI'S GAL DIARY — a fictional style profile, made for fun ✨</p>
+  <p class="footer-sub">Not affiliated with any real person or brand.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
