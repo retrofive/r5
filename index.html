@@ -32,46 +32,90 @@
   </div>
 
   <div class="hero-avatar">
-    <svg viewBox="0 0 300 340" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 320 400" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+        <radialGradient id="glow" cx="50%" cy="32%" r="60%">
           <stop offset="0%" stop-color="#ffd6ec"/>
           <stop offset="100%" stop-color="#ff2fa1" stop-opacity="0"/>
         </radialGradient>
         <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#e8a06b"/>
-          <stop offset="100%" stop-color="#c97a45"/>
+          <stop offset="0%" stop-color="#eaa872"/>
+          <stop offset="100%" stop-color="#cd8451"/>
         </linearGradient>
-        <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#fff2a8"/>
-          <stop offset="100%" stop-color="#ffb6d9"/>
+        <linearGradient id="hair" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0%" stop-color="#ffe9a3"/>
+          <stop offset="100%" stop-color="#ff9ed8"/>
+        </linearGradient>
+        <linearGradient id="streak" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ff2fa1"/>
+          <stop offset="100%" stop-color="#ff9ed8"/>
+        </linearGradient>
+        <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ff5cbb"/>
+          <stop offset="100%" stop-color="#d81f8c"/>
+        </linearGradient>
+        <linearGradient id="lipgloss" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ff8fae"/>
+          <stop offset="100%" stop-color="#e8497a"/>
         </linearGradient>
       </defs>
-      <circle cx="150" cy="150" r="150" fill="url(#glow)"/>
-      <!-- hair back -->
-      <path d="M60 150 Q40 260 90 320 L210 320 Q260 260 240 150 Q240 60 150 55 Q60 60 60 150 Z" fill="url(#hair)"/>
-      <!-- face -->
-      <ellipse cx="150" cy="165" rx="78" ry="88" fill="url(#skin)"/>
+
+      <circle cx="160" cy="140" r="170" fill="url(#glow)"/>
+
+      <!-- hair back, long wavy -->
+      <path d="M62 150 Q30 260 55 360 Q75 400 100 400 L98 260 Q95 190 100 150
+               Q160 60 220 150 Q225 190 222 260 L220 400 Q245 400 265 360
+               Q290 260 258 150 Q250 65 160 55 Q70 65 62 150 Z" fill="url(#hair)"/>
+
+      <!-- shoulders / off-shoulder top -->
+      <path d="M40 400 L40 340 Q40 300 90 280 L130 300 Q160 312 190 300 L230 280
+               Q280 300 280 340 L280 400 Z" fill="url(#top)"/>
+      <path d="M50 292 Q160 330 270 292 L270 302 Q160 340 50 302 Z" fill="#ffffff" opacity="0.35"/>
+
+      <!-- neck -->
+      <path d="M138 250 Q160 262 182 250 L182 292 Q160 304 138 292 Z" fill="url(#skin)"/>
+
+      <!-- ears + hoop earrings -->
+      <ellipse cx="95" cy="185" rx="10" ry="16" fill="url(#skin)"/>
+      <ellipse cx="225" cy="185" rx="10" ry="16" fill="url(#skin)"/>
+      <circle cx="95" cy="205" r="7" fill="none" stroke="#ffd166" stroke-width="3"/>
+      <circle cx="225" cy="205" r="7" fill="none" stroke="#ffd166" stroke-width="3"/>
+
+      <!-- head -->
+      <path d="M96 175 Q92 110 160 100 Q228 110 224 175 Q226 220 200 248
+               Q182 266 160 268 Q138 266 120 248 Q94 220 96 175 Z" fill="url(#skin)"/>
+
       <!-- blush -->
-      <ellipse cx="108" cy="185" rx="16" ry="9" fill="#ff8fc1" opacity="0.55"/>
-      <ellipse cx="192" cy="185" rx="16" ry="9" fill="#ff8fc1" opacity="0.55"/>
-      <!-- eyes (big gyaru lashes) -->
-      <path d="M100 165 Q118 150 140 165" stroke="#3a1f10" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <path d="M160 165 Q182 150 200 165" stroke="#3a1f10" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <ellipse cx="120" cy="172" rx="9" ry="12" fill="#3a1f10"/>
-      <ellipse cx="180" cy="172" rx="9" ry="12" fill="#3a1f10"/>
-      <circle cx="123" cy="167" r="3" fill="#fff"/>
-      <circle cx="183" cy="167" r="3" fill="#fff"/>
-      <!-- lips (glossy) -->
-      <path d="M132 210 Q150 224 168 210 Q150 218 132 210 Z" fill="#e8497a"/>
-      <!-- hair front / fringe -->
-      <path d="M65 140 Q90 90 150 88 Q210 90 235 140 Q210 110 150 112 Q90 110 65 140 Z" fill="url(#hair)"/>
-      <!-- side pieces -->
-      <path d="M62 150 Q50 220 78 300 Q60 220 70 150 Z" fill="url(#hair)"/>
-      <path d="M238 150 Q250 220 222 300 Q240 220 230 150 Z" fill="url(#hair)"/>
-      <!-- choker -->
-      <rect x="118" y="238" width="64" height="10" rx="5" fill="#1a1a1a"/>
-      <circle cx="150" cy="243" r="5" fill="#ff2fa1"/>
+      <ellipse cx="122" cy="212" rx="15" ry="8" fill="#ff8fc1" opacity="0.5"/>
+      <ellipse cx="198" cy="212" rx="15" ry="8" fill="#ff8fc1" opacity="0.5"/>
+
+      <!-- eyebrows -->
+      <path d="M114 158 Q128 148 144 154" stroke="#4a2a16" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M176 154 Q192 148 206 158" stroke="#4a2a16" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+      <!-- eyes -->
+      <path d="M112 178 Q128 168 148 178 Q130 186 112 178 Z" fill="#fff"/>
+      <path d="M172 178 Q192 168 208 178 Q190 186 172 178 Z" fill="#fff"/>
+      <circle cx="132" cy="178" r="8" fill="#3a1f10"/>
+      <circle cx="188" cy="178" r="8" fill="#3a1f10"/>
+      <circle cx="134" cy="175" r="2.5" fill="#fff"/>
+      <circle cx="190" cy="175" r="2.5" fill="#fff"/>
+      <path d="M110 176 Q128 162 150 176" stroke="#2a170c" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M170 176 Q192 162 210 176" stroke="#2a170c" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+      <!-- lips -->
+      <path d="M142 224 Q160 234 178 224 Q160 240 142 224 Z" fill="url(#lipgloss)"/>
+
+      <!-- hair front fringe -->
+      <path d="M94 168 Q100 104 160 96 Q220 104 226 168 Q206 122 160 120 Q114 122 94 168 Z" fill="url(#hair)"/>
+      <!-- money-piece streak -->
+      <path d="M150 100 Q140 130 146 170 Q152 172 156 168 Q152 130 160 100 Z" fill="url(#streak)"/>
+      <!-- side-swept bang -->
+      <path d="M96 168 Q90 140 108 112 Q98 140 104 172 Z" fill="url(#hair)" opacity="0.9"/>
+
+      <!-- choker with heart charm -->
+      <rect x="130" y="260" width="60" height="9" rx="4.5" fill="#1a1a1a"/>
+      <path d="M160 270 q-6 -6 -11 -1 q-2 5 5 9 q3 2 6 4 q3 -2 6 -4 q7 -4 5 -9 q-5 -5 -11 1 Z" fill="#ff2fa1"/>
     </svg>
   </div>
 </header>
